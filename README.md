@@ -35,7 +35,7 @@ pharma-paper-finder/
 ---
 ### 1.Clone the repository
 
-- [git clone https://github.com/your-username/pharma-paper-finder.git](https://github.com/Ritimuktapatro123/pharmaPaperFinder.git)
+- git clone https://github.com/Ritimuktapatro123/pharmaPaperFinder.git
 - cd pharma-paper-finder
 
 ### 2. Install using Poetry
