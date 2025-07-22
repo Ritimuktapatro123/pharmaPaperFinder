@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pharma-paper-finder"
+version = "0.1.4"
+description = "Fetch PubMed research papers with non-academic authors in pharma/biotech."
+authors = ["Ritimukta patro <patroritimukta123@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "pharma_paper_finder", from = "src" }]
+
+[tool.poetry.scripts]
+get-papers-list = "pharma_paper_finder.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+tqdm = "^4.66.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
